@@ -18,6 +18,7 @@ class CreateStudentDetailsTable extends Migration
             $table->integer('student_id');
             $table->integer('course_id');
             $table->integer('batch_id');
+            $table->integer('status')->default(1);
             $table->timestamps();
         });
     }

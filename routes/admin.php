@@ -52,6 +52,14 @@ Route::namespace('App\Http\Controllers')->group(function(){
             Route::get('/control/{user_id}',   'IndexController@control')->name('user.control');
             Route::post('change-password',     'IndexController@changePassword')->name('user.change_password');
         });
-       
+
+
+        // Search bKash payment
+        Route::get('/bkash/search/{trxID}', [App\Http\Controllers\BkashTokenizePaymentController::class,'searchTnx'])->name('bkash-serach');
+
+        // Refund bKash payment
+        Route::get('/bkash/refund', [App\Http\Controllers\BkashTokenizePaymentController::class,'refund'])->name('bkash-refund');
+        Route::get('/bkash/refund/status', [App\Http\Controllers\BkashTokenizePaymentController::class,'refundStatus'])->name('bkash-refund-status');
+
     }); 
 });

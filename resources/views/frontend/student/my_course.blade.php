@@ -61,7 +61,7 @@
                 <h4 class="modal-title">Enroll New Course</h4>
             </div>
             <div class="modal-body">
-                <form action="{{ url('save-student-course') }}" method="POST">
+                <form action="{{ url('/bkash/create-payment') }}" method="GET">
                 @csrf
                     <div class="row">
                         <input type="hidden" name="student_id" value="{{ Session('studentId') }}" class="form-control" />

@@ -42,6 +42,11 @@ Route::namespace('App\Http\Controllers')->group(function(){
             return view("frontend.student_account_signup");
         });
 
+        // Payment Routes for bKash
+        Route::get('/bkash/payment', [App\Http\Controllers\BkashTokenizePaymentController::class,'index']);
+        Route::get('/bkash/create-payment', [App\Http\Controllers\BkashTokenizePaymentController::class,'createPayment'])->name('bkash-create-payment');
+        Route::get('/bkash/callback', [App\Http\Controllers\BkashTokenizePaymentController::class,'callBack'])->name('bkash-callBack');
+
     });
 
 });
@@ -56,3 +61,7 @@ Route::namespace('App\Http\Controllers')->group(function(){
 // });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+

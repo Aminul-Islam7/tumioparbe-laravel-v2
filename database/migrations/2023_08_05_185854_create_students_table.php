@@ -26,6 +26,7 @@ class CreateStudentsTable extends Migration
             $table->string('grade');
             $table->string('school')->nullable();
             $table->string('district');
+            $table->string('photo');
             $table->string('fb_link');
             $table->integer('status')->default(1);
             $table->timestamps();

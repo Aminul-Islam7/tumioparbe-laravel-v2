@@ -21,7 +21,6 @@ class UserFactory extends Factory
             'role' => 'admin', // Default role is 'admin'
             'status' => $this->faker->randomElement([1]), // Random status (0 or 1)
             'photo' => 'default.jpg', // Default profile photo filename
-            'address' => $this->faker->address,
             'email_verified_at' => now(),
             'password' => bcrypt('password'), // Default password (you can change this)
             'remember_token' => Str::random(10),

@@ -29,8 +29,8 @@ class IndexController extends Controller
     }
 
     public function store(
-        ?int $batchId = null,
-        Request $request
+        Request $request,
+        ?int $batchId = null
     ) {
 
         //Validate

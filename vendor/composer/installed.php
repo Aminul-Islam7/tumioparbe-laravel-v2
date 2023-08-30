@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ed69151329f5354b69cc56f0ee08614ae8e75fc9',
+        'reference' => '8cd116a765c0f5ee275f4a9bf3f5f9ceecb8406f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -379,6 +379,15 @@
                 0 => 'v8.83.27',
             ),
         ),
+        'karim007/laravel-bkash-tokenize' => array(
+            'pretty_version' => 'v2.2',
+            'version' => '2.2.0.0',
+            'reference' => 'a9eb8a6223e1fd85321e61770d8fbfa33b601473',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../karim007/laravel-bkash-tokenize',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -397,7 +406,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ed69151329f5354b69cc56f0ee08614ae8e75fc9',
+            'reference' => '8cd116a765c0f5ee275f4a9bf3f5f9ceecb8406f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -29,8 +29,8 @@ class IndexController extends Controller
     }
 
     public function store(
-        ?int $courseId = null,
-        Request $request
+        Request $request,
+        ?int $courseId = null
     ) {
 
         //Validate

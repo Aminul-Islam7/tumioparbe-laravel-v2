@@ -31,8 +31,8 @@ class IndexController extends Controller
     }
 
     public function store(
-        ?int $userId = null,
-        Request $request
+        Request $request,
+        ?int $userId = null        
     ){
 
         if($userId != null){

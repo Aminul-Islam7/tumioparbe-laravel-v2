@@ -1462,6 +1462,69 @@
             "install-path": "../hamcrest/hamcrest-php"
         },
         {
+            "name": "karim007/laravel-bkash-tokenize",
+            "version": "v2.2",
+            "version_normalized": "2.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/karim-007/laravel-bkash-tokenize.git",
+                "reference": "a9eb8a6223e1fd85321e61770d8fbfa33b601473"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/karim-007/laravel-bkash-tokenize/zipball/a9eb8a6223e1fd85321e61770d8fbfa33b601473",
+                "reference": "a9eb8a6223e1fd85321e61770d8fbfa33b601473",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "illuminate/support": "^6|^7|^8|^9|^10",
+                "php": "^7.4|^8.0|^8.1|^8.2"
+            },
+            "time": "2023-06-20T09:39:01+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Karim007\\LaravelBkashTokenize\\BkashTokenizeServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelBkashTokenize": "Karim007\\LaravelBkashTokenize\\LaravelBkashTokenize"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Karim007\\LaravelBkashTokenize\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Md abdul karim",
+                    "email": "karim.cse007@gmail.com"
+                }
+            ],
+            "description": "This is bKash tokenize payment gateway for laravel",
+            "keywords": [
+                "bkash",
+                "bkash-payment",
+                "bkash-payment-gateway",
+                "laravel-bkash",
+                "laravel-bkash-payment",
+                "laravel-bkash-payment-tokenize"
+            ],
+            "support": {
+                "issues": "https://github.com/karim-007/laravel-bkash-tokenize/issues",
+                "source": "https://github.com/karim-007/laravel-bkash-tokenize/tree/v2.2"
+            },
+            "install-path": "../karim007/laravel-bkash-tokenize"
+        },
+        {
             "name": "laravel/framework",
             "version": "v8.83.27",
             "version_normalized": "8.83.27.0",
